@@ -12,7 +12,7 @@ git clone https://github.com/raulgarcia07/django_polls.git
 ```
 python -m venv .venv 
 o
-python3 m venv .venv o
+python3 m venv .venv 
 ```
 3. Activar el entorno virtual con el comando:
 ```
