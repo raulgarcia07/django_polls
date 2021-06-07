@@ -70,8 +70,8 @@ def development(ctx):
  ```
  fab development deploy
 ```
-
-4. Se pueden añadir varios entornos de configuración creando funciones del tipos del paso 2:
+(OPCIONAL)
+4. Se pueden añadir varios entornos de configuración creando funciones del tipo del paso 2:
 ```
 @task
 def production(ctx):
