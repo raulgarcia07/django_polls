@@ -80,7 +80,7 @@ def production(ctx):
     ctx.connect_kwargs = {"password": "production"}
  ``` 
 
- 5. Y ejecutar el script con el comando con la estructura `fab nombre-de-la-función`, en este caso:
+ 5. Y ejecutar el script con el comando con la estructura `fab nombre-de-la-función deploy`, en este caso:
     ```
     fab production deploy
     ```
