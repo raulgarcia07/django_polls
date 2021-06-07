@@ -57,28 +57,30 @@ pip install fabric
 
 2. Cambiar los datos de acceso a la máquina remota, localizados en la función ´development(ctx)´ del archivo fabfile.py ,líneas 12-16:
 
-´´´
+```
 @task
 def development(ctx):
     ctx.user = 'vagrant'
     ctx.host = '192.168.33.10'
     ctx.connect_kwargs = {"password": "vagrant"}
- ´´´ 
+ ``` 
 
  3. Ejecutar el script con el comando:
 
- ´´´
+ ```
  fab development deploy
-´´´
+```
 
 4. Se pueden añadir varios entornos de configuración creando funciones del tipos del paso 2:
-  ´´´
+```
 @task
 def production(ctx):
     ctx.user = 'vagrant'
     ctx.host = '192.168.33.10'
     ctx.connect_kwargs = {"password": "production"}
- ´´´ 
+ ``` 
 
  5. Y ejecutar el script con el comando con la estructura `fab nombre-de-la-función`, en este caso:
+    ```
     fab production deploy
+    ```
